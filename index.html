@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saleh's Snake 🐍</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1 class="title">Saleh's Snake 🐍</h1>
+
+    <div class="stats-board">
+        <div class="stat-item"><div class="stat-label">Score</div><div class="stat-value" id="score">0</div></div>
+        <div class="stat-item"><div class="stat-label">Food Eaten</div><div class="stat-value" id="foodCount">0</div></div>
+        <div class="stat-item"><div class="stat-label">High Score</div><div class="stat-value" id="highScore">0</div></div>
+    </div>
+
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+    <div class="game-over" id="gameOver">
+        <h2>Game Over!</h2>
+        <div class="final-stats">
+            <div>Final Score: <span id="finalScore">0</span></div>
+            <div>Food Collected: <span id="finalFood">0</span></div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <button id="restartBtn">Restart Game</button>
+    </div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
